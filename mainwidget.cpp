@@ -9,9 +9,6 @@
 #include <QtCore/QCoreApplication>
 #include "mainwidget.hpp"
 
-//
-template<>
-MainWidget* Singleton<MainWidget>::s_instance = NULL;
 
 //
 MainWidget::MainWidget(QWidget *parent) :

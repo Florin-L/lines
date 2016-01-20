@@ -7,7 +7,6 @@
 #include "griditem.hpp"
 #include "pathfinder.hpp"
 
-template<> PathFinder* Singleton<PathFinder>::s_instance = 0;
 
 /*!
   */

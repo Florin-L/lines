@@ -7,7 +7,6 @@
 #include "ballitem.hpp"
 #include "griditem.hpp"
 
-template<> LinesTracker* Singleton<LinesTracker>::s_instance = 0;
 
 /*!
   */

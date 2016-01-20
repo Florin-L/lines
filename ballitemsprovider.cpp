@@ -5,7 +5,6 @@
 
 #include "ballitemsprovider.hpp"
 
-template<> BallItemsProvider* Singleton<BallItemsProvider>::s_instance = NULL;
 
 /*!
   */

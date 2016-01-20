@@ -22,11 +22,6 @@ bool isRunningOnDesktop()
 //
 void atExit(void)
 {
-    // it seems that the code below is redundant: when an application terminates the operating system
-    // reclaims all the allocated heap memory.
-    LinesTracker::instance()->destroy();
-    PathFinder::instance()->destroy();
-    BallItemsProvider::instance()->destroy();
 }
 
 int main(int argc, char *argv[])

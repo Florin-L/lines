@@ -16,26 +16,13 @@ public:
       */
     static T* instance()
     {
-        if (!s_instance) {
-            s_instance = new T;
-        }
-        return s_instance;
-    }
-
-    /*!
-      * Destroys the single instance of the singleton type.
-      */
-    inline void destroy()
-    {
-        delete s_instance;
-        s_instance = 0;
+        static T t;
+        return &t;
     }
 
 protected:
     Singleton() {}
     virtual ~Singleton() {}
-
-    static T *s_instance; /*!< the single instance of the class */
 
 private:
     Singleton(const Singleton &);
