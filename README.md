@@ -1,2 +1,2 @@
 # lines
-The game of 'lines' implemented in C++ with QT.
+The game of 'lines' implemented many years ago in C++ with QT.
